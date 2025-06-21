@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+:root {
+  --main-color: #b88a55;
+  --bg-color: #f8f4f0;
+  --text-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.lang-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.lang-switcher select {
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.menu {
+  margin: 20px 0;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 700;
+  margin: 0 10px;
+}
+header .menu a.active {
+  text-decoration: underline;
+}
+
+.hero {
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.verse {
+  font-style: italic;
+  margin: 20px 0 10px;
+  color: #555;
+}
+.verse span {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+.invitation-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.subpage {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.subpage img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.map-container iframe {
+  border-radius: 10px;
+}
+
+.subpage ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+}
+.subpage ul li {
+  margin: 5px 0;
+}
+
+.rsvp-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.rsvp-button:hover {
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .lang-switcher {
+    top: 10px;
+    right: 10px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu a {
+    margin: 5px 0;
+  }
+  .subpage img {
+    width: 80%;
+  }
+}

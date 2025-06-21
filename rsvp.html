@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="rsvp_heading">RSVP</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <div class="lang-switcher">
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+        <option value="sv">Svenska</option>
+      </select>
+    </div>
+    <h1 data-i18n="rsvp_heading">RSVP</h1>
+    <nav class="menu">
+      <a href="index.html" data-i18n="home">Home</a>
+      <a href="bride.html" data-i18n="about_bride">About Rozali</a>
+      <a href="groom.html" data-i18n="about_groom">About Igor</a>
+      <a href="venue.html" data-i18n="venue">Venue</a>
+      <a href="menu.html" data-i18n="menu">Menu</a>
+      <a href="rsvp.html" data-i18n="rsvp" class="active">RSVP</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="subpage">
+      <p data-i18n="rsvp_text">
+        Please click the link below to confirm your attendance:
+      </p>
+      <a 
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdJdqL51MulOcMGDy2BctPO1lq8wO5-Of-OYVwt7V_5CsnEJQ/viewform?usp=sharing" 
+        target="_blank" 
+        class="rsvp-button"
+        data-i18n="rsvp_button">
+        Confirm Attendance
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footer_date"> 2025 | :00 PM</p>
+  </footer>
+
+  <script src="./i18n.js"></script>
+</body>
+</html>
