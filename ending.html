@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Igor & Rozali</title>
+  <title>Happily Ever After — Igor & Rozali</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body::before{
+      background: center / cover no-repeat url('./images/EndingPic.jpg') !important;
+    }
+    .hero{
+      background: center / cover no-repeat url('./images/EndingPic.jpg') !important;
+    }
+  </style>
   <script src="i18n.js" defer></script>
 </head>
-<body data-page="home">
+<body>
   <header>
     <h1>Igor & Rozali</h1>
     <nav class="menu">
-      <a href="index.html" class="active" data-i18n="nav_welcome">Welcome</a>
+      <a href="index.html" data-i18n="nav_welcome">Welcome</a>
       <a href="invitation.html" data-i18n="nav_invitation">Invitation</a>
       <a href="church.html" data-i18n="nav_ceremony">Ceremony</a>
       <a href="venue.html" data-i18n="nav_reception">Party</a>
@@ -21,18 +29,8 @@
 
   <main class="hero">
     <div class="hero-content">
-      <p class="verse" data-i18n="wedding_verse"></p>
-      <p class="invitation-text" data-i18n="invitation_text"></p>
+      <p class="ending" data-i18n="ending_text"></p>
     </div>
   </main>
-
-  <div id="language-overlay">
-    <div class="overlay-content">
-      <h2>Please select your language</h2>
-      <button data-lang="en">English</button>
-      <button data-lang="ar">العربية</button>
-      <button data-lang="sv">Svenska</button>
-    </div>
-  </div>
 </body>
 </html>
