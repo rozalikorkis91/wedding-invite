@@ -1,50 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title data-i18n="rsvp_heading">RSVP</title>
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RSVP — Igor & Rozali</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="i18n.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="lang-switcher">
-      <select id="language-select">
-        <option value="en">English</option>
-        <option value="ar">العربية</option>
-        <option value="sv">Svenska</option>
-      </select>
-    </div>
-    <h1 data-i18n="rsvp_heading">RSVP</h1>
+    <h1>Igor & Rozali</h1>
     <nav class="menu">
-      <a href="index.html" data-i18n="home">Home</a>
-      <a href="bride.html" data-i18n="about_bride">About Rozali</a>
-      <a href="groom.html" data-i18n="about_groom">About Igor</a>
-      <a href="venue.html" data-i18n="venue">Venue</a>
-      <a href="menu.html" data-i18n="menu">Menu</a>
-      <a href="rsvp.html" data-i18n="rsvp" class="active">RSVP</a>
+      <a href="index.html" data-i18n="nav_welcome">Welcome</a>
+      <a href="invitation.html" data-i18n="nav_invitation">Invitation</a>
+      <a href="church.html" data-i18n="nav_ceremony">Ceremony</a>
+      <a href="venue.html" data-i18n="nav_reception">Party</a>
+      <a href="rsvp.html" class="active" data-i18n="nav_rsvp">RSVP</a>
     </nav>
   </header>
 
   <main>
-    <section class="subpage">
-      <p data-i18n="rsvp_text">
-        Please click the link below to confirm your attendance:
-      </p>
-      <a 
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdJdqL51MulOcMGDy2BctPO1lq8wO5-Of-OYVwt7V_5CsnEJQ/viewform?usp=sharing" 
-        target="_blank" 
-        class="rsvp-button"
-        data-i18n="rsvp_button">
+    <section class="masthead">
+      <h2 class="names">RSVP</h2>
+      <div class="meta" data-i18n="rsvp_intro">Confirm your attendance</div>
+    </section>
+
+    <section class="section glass">
+      <p class="lead" data-i18n="rsvp_lead"></p>
+
+      <div class="form-frame">
+        <iframe id="rsvp-frame" src="" loading="lazy">Loading…</iframe>
+      </div>
+
+      <a id="rsvp-link" class="btn" href="#" target="_blank" rel="noopener" onclick="triggerEnding();" data-i18n="rsvp_button">
         Confirm Attendance
       </a>
+
+      <div style="margin-top:10px;">
+        <a class="btn" href="javascript:void(0)" onclick="triggerEnding();" data-i18n="see_ending">
+          I’ve submitted — show me the surprise
+        </a>
+      </div>
     </section>
   </main>
-
-  <footer>
-    <p data-i18n="footer_date"> 2025 | :00 PM</p>
-  </footer>
-
-  <script src="./i18n.js"></script>
 </body>
 </html>
