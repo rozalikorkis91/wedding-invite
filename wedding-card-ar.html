@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>دعوة زفاف | إيغور & روزالي</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Scheherazade+New:wght@400;700&family=El+Messiri:wght@400;700&family=Reem+Kufi+Fun:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --green-1:#7a9651;  
+    --green-2:#95a54e;  
+    --ink:#232323;      
+    --veil: rgba(255,255,255,.35);
+  }
+  html,body{height:100%;margin:0}
+  body{
+    font-family:"El Messiri","Noto Naskh Arabic",serif;
+    color:var(--ink);
+  }
+  .card{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px;
+    --bg:url('images/Card.jpg');
+    background-image: var(--bg);
+    background-size:cover;
+    background-position:center;
+    isolation:isolate;
+  }
+  .card::before{
+    content:"";
+    position:absolute; inset:0;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255,255,255,.08);
+    z-index:0;
+  }
+  .panel{
+    position:relative; z-index:1;
+    width:min(780px, 100%);
+    padding:28px 28px 22px;
+    background:var(--veil);
+    border-radius:20px;
+    box-shadow:0 12px 40px rgba(0,0,0,.08);
+  }
+  .verse{
+    text-align:center;
+    color:var(--green-2);
+    font-size:20px; line-height:1.6;
+    margin:4px 0 14px;
+    font-family:"Scheherazade New","Amiri",serif;
+    font-style:italic;
+  }
+  .parents{
+    display:flex; justify-content:space-between; gap:16px;
+    font-size:17px; margin:10px 0 18px;
+  }
+  .invite{ text-align:center; font-size:18px; margin:4px 0 2px; }
+  .children{ text-align:center; font-size:18px; margin:0 0 10px; }
+  .names{
+    text-align:center; margin:6px 0 10px;
+    font-size:40px; letter-spacing:2px;
+    color:var(--green-1);
+    font-family:"Reem Kufi Fun","Amiri",serif;
+    font-weight:700;
+  }
+  .details{ text-align:center; font-size:17px; line-height:1.85; margin:10px 0 6px; }
+  .closing{ text-align:center; font-size:16px; margin:8px 0 14px; opacity:.9; }
+  .qr-wrap{ display:flex; flex-direction:column; align-items:center; gap:10px; margin-top:10px; }
+  .qr-box{
+    background:#fff; padding:14px; border-radius:16px;
+    box-shadow:0 8px 26px rgba(0,0,0,.10);
+  }
+  .hint{font-size:14px; opacity:.9; text-align:center}
+  @media print{
+    body{ -webkit-print-color-adjust:exact; print-color-adjust:exact }
+    .panel{ box-shadow:none }
+  }
+</style>
+</head>
+<body>
+
+<section class="card">
+  <div class="panel">
+
+    <div class="verse">«المحبة لا تسقط أبداً.»</div>
+
+    <div class="parents">
+      <div>السيد إيليا ڤيساكي وعائلته</div>
+      <div>السيد حنا كوركيس وعائلته</div>
+    </div>
+
+    <div class="invite">يسرّهما أن يدعوا حضرتكم لمشاركة الفرح بزفاف</div>
+    <div class="children">ولديهما</div>
+    <div class="names">إيغور ✦ روزالي</div>
+
+    <div class="details">
+      السبت ٨ نوفمبر ٢٠٢٥<br>
+      الساعة ١٧:٠٠ — مراسم الإكليل في كنيسة Equmeniakyrkan، <strong>هوسكڤارنا</strong><br>
+      الساعة ١٩:٠٠ — حفل الاستقبال في Massaya Palace، يونشوبينغ
+    </div>
+
+    <div class="closing">
+      حضوركم يسعدنا وتمنياتكم تكمل فرحتنا — تمنّوا لنا أن نعيش بسعادة بقية حياتنا
+    </div>
+
+    <div class="qr-wrap">
+      <div class="qr-box">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Frozalikorkis91.github.io%2Fwedding-invite%2F&size=280x280&margin=0&color=6B7F45"
+          alt="QR"
+          width="220" height="220" loading="lazy">
+      </div>
+      <div class="hint">استخدم كاميرا هاتفك للاطلاع على تفاصيل الدعوة</div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
